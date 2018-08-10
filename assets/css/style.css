@@ -16,16 +16,20 @@ body, html {
 img {
     width: 100%;
     height: 75vh;
-    box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-    border: 2px solid rgb(219, 217, 217);
+    box-shadow: 0 0.625rem 0.875rem 0 rgba(0, 0, 0, 0.2), 0 0.75rem 2.5rem 0 rgba(0, 0, 0, 0.19);
+    border: 0.125rem solid rgb(219, 217, 217);
 }
 /* carousel wrapper */
 .wrapper {
-    max-width: 800px;
+    max-width: 50rem;
     position: absolute;
-    /* margin: auto; */
-    top: 100px;
-    left: 300px;
+    padding-top: 4.6875rem;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
 }
 
 /* hide slides on default */
@@ -96,7 +100,7 @@ img {
     cursor: pointer;
     height: .6rem;
     width: .6rem;
-    margin: 0 2px;
+    margin: 10px 2px;
     background-color: rgb(80, 75, 75);
     border-radius: 50%;
     display: inline-block;
@@ -125,5 +129,64 @@ img {
 @keyframes fade {
     from {opacity: .2}
     to {opacity: 1}
+}
+
+/* @media (max-width: 980px) {
+    .wrapper {
+        width: 800px;
+        position: absolute;
+        
+        top: 100px;
+        left: 300px;
+    }
+
+    img {
+        width: 100%;
+        height: 75vh;
+        box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+        border: 2px solid rgb(219, 217, 217);
+    }
+} */
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 90%;
+        position: absolute;
+        padding-top: 4.6875rem;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+    }
+
+    img {
+        width: 100%;
+        height: 75vh;
+        box-shadow: 0 0.625rem 0.875rem 0 rgba(0, 0, 0, 0.2), 0 0.75rem 2.5rem 0 rgba(0, 0, 0, 0.19);
+        border: 0.125rem solid rgb(219, 217, 217);
+    }
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        max-width: 90%;
+        position: absolute;
+        padding-top: 4.6875rem;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+    }
+
+    img {
+        width: 100%;
+        height: 75vh;
+        box-shadow: 0 0.625rem 0.875rem 0 rgba(0, 0, 0, 0.2), 0 0.75rem 2.5rem 0 rgba(0, 0, 0, 0.19);
+        border: 0.125rem solid rgb(219, 217, 217);
+    }
 }
 
